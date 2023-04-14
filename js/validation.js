@@ -1,22 +1,17 @@
-// const email = document.querySelector(".email");
-// const error = document.querySelector(".error");
-// const valid = document.querySelector(".validation");
-// const button = document.querySelector(".btn-submit");
+const submit = document.getElementById("submit");
+const error = document.querySelector(".error");
+const validation = document.querySelector(".validation");
+const email = document.getElementById("email");
 
-// button.addEventListener("click", validateEmail);
+let emailText = email.value;
 
-function validateEmail(input) {
+submit.addEventListener("click", validateEmail);
 
-    var email = input.value;
-    var mailFormat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-
-    console.log(input);
-
-    if(input.value.match(mailFormat)) {
-        alert("valid!");
-    }
-    else {
-        alert("Not Valid!");
+function validateEmail() {
+    if (email.value.indexOf("@") == -1) {
+        error.classList.remove("inv");
+        validation.classList.remove("inv");
     }
 }
+
 

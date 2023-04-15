@@ -200,6 +200,7 @@ body {
 }
 
 .container {
+  background: url("../images/bg-pattern-desktop.svg") no-repeat;
   display: grid;
   grid-template-columns: 1.35fr 1fr;
   max-width: 1440px;
@@ -322,7 +323,7 @@ body {
   }
   .logo {
     text-align: left;
-    margin: 0 0 2em;
+    margin: 0 2em 2em;
   }
   .logo img {
     width: 35%;

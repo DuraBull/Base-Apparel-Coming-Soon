@@ -58,12 +58,12 @@
     border: none
     border-radius: 30px
     &-submit
-        background: $gradient2
+        background: linear-gradient(135deg, $grad-2-1, $grad-2-2)
         width: 100px
         height: 59px
         box-shadow: 2px 2px 10px $desat-red
-    // &:active
-    //     background: $gradient1
+    &:active
+        background: linear-gradient(135deg, lighten($grad-2-1, 5%), lighten($grad-2-2, 5%))
 
 .error
     position: absolute

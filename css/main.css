@@ -203,6 +203,7 @@ body {
   display: grid;
   grid-template-columns: 1.35fr 1fr;
   max-width: 1440px;
+  min-width: 350px;
 }
 
 .content {
@@ -213,6 +214,18 @@ body {
 
 .logo {
   margin-bottom: 8em;
+}
+
+.hero {
+  background: url("../images/hero-desktop.jpg") no-repeat;
+  background-size: cover;
+  min-width: 300px;
+}
+
+.hero-mobile {
+  display: none;
+  background: url("../images/hero-mobile.jpg") no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -296,7 +309,60 @@ body {
   display: none;
 }
 
-.hero {
-  background: url("../images/hero-desktop.jpg") no-repeat;
-  background-size: cover;
+@media screen and (max-width: 60em) {
+  body {
+    display: block;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .logo {
+    text-align: left;
+    margin: 2em;
+  }
+  .logo img {
+    width: 35%;
+  }
+  .content {
+    padding: 0;
+  }
+  .hero {
+    display: none;
+  }
+  .hero-mobile {
+    display: flex;
+    height: 250px;
+  }
+  .title {
+    font-size: 1.2em;
+    line-height: 2.2em;
+    margin-top: 3em;
+  }
+  .description {
+    margin: auto;
+    padding: 0 2em 2em;
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+  .form {
+    margin: auto;
+    height: 47px;
+  }
+  .form input {
+    font-size: 0.9em;
+    height: 45px;
+    padding: 0.2em 5.2em 0.2em 1.8em;
+  }
+  .btn-submit {
+    width: 65px;
+    height: 47px;
+  }
+  .error {
+    right: 5em;
+  }
 }/*# sourceMappingURL=main.css.map */

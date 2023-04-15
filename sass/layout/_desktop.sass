@@ -2,6 +2,7 @@
     display: grid
     grid-template-columns: 1.35fr 1fr
     max-width: 1440px
+    min-width: 350px
 
 .content
     display: flex
@@ -10,6 +11,17 @@
 
 .logo
     margin-bottom: 8em
+
+.hero
+    background: url("../images/hero-desktop.jpg") no-repeat
+    background-size: cover
+    min-width: 300px
+
+.hero-mobile
+    display: none
+    background: url("../images/hero-mobile.jpg") no-repeat
+    background-size: cover
+
 
 .title
     color: $dark-grayish-red
@@ -79,7 +91,3 @@
  
 .inv
     display: none
-
-.hero
-    background: url("../images/hero-desktop.jpg") no-repeat
-    background-size: cover

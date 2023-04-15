@@ -14,20 +14,8 @@ email.addEventListener("keyup", function(event) {
 });
 
 function validateEmail() {
-    if (checkAt()) {
-
-        if (emailLength() >= 2) {
-
-            if (validDomain()) {
-                emailValid = true;
-            }
-            else {
-                emailValid = false;
-            }
-        }
-        else {
-            emailValid = false;
-        }
+    if (checkAt() && (emailLength() >= 2) && validDomain()) {
+        emailValid = true;
     }
     else {
         emailValid = false;

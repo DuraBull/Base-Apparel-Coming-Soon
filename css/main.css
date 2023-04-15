@@ -322,13 +322,13 @@ body {
   }
   .logo {
     text-align: left;
-    margin: 2em;
+    margin: 0 0 2em;
   }
   .logo img {
     width: 35%;
   }
   .content {
-    padding: 0;
+    padding: 2em 0;
   }
   .hero {
     display: none;
